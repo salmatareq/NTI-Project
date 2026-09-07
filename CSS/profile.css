@@ -91,12 +91,7 @@
   justify-content: space-between;
 }
 
-.card-title i,
-.section-heading i {
-  color: var(--main-color);
-  font-size: 18px;
-}
-
+ 
 .card-title span,
 .section-heading span {
   font-weight: 600;
