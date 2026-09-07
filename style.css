@@ -292,33 +292,6 @@ body {
     z-index: 10;
 }
 
-
-.arrow {
-    position: absolute;
-
-    color: #654bd4;
-
-    font-size: 55px;
-    font-weight: bold;
-
-    z-index: 6;
-}
-
-
-.arrow-one {
-    left: 45%;
-    top: 100px;
-}
-
-
-.arrow-two {
-    right: 25%;
-    bottom: 50px;
-
-    color: #61b5ee;
-}
-
-
 @media (max-width: 991px) {
 
     .hero {
