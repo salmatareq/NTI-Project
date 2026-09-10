@@ -1,210 +1,415 @@
 :root {
-  --primary-color: #5b3cc4;
-  --primary-dark: #432b9d;
-  --primary-soft: #e9e5ff;
-  --text-dark: #171536;
-  --bg-light: #f8f7ff;
-  --white: #ffffff;
-  --border-light: #ececec;
+    --primary-color: #5b3cc4;
+    --primary-dark: #432b9d;
+    --primary-soft: #eeeaff;
+    --background: #f8f7ff;
+    --white: #ffffff;
+    --text-dark: #171536;
+    --text-light: #77748c;
+    --border: #eceaf5;
 }
 
 body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-  background-color: var(--bg-light);
-  color: var(--text-dark);
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: var(--background);
+    color: var(--text-dark);
 }
 
-/* Sidebar */
+
+/*Sidebar*/
 
 .sidebar {
-  min-height: calc(100vh - 80px);
+    min-height: calc(100vh - 40px);
+    background-color: var(--white);
+    border-radius: 14px;
+    padding: 20px 12px;
+    display: flex;
+    flex-direction: column;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 0 10px 25px;
+    color: var(--primary-color);
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.logo-icon {
+    width: 30px;
+    height: 30px;
+    background-color: var(--primary-soft);
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .sidebar-menu {
-  display: flex;
-  flex-direction: column;
-  gap: 5px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
 }
 
 .sidebar-item {
-  height: 42px;
-  padding: 0 12px;
-
-  display: flex;
-  align-items: center;
-
-  text-decoration: none;
-  color: #56548a;
-
-  font-size: 13px;
-  font-weight: 500;
-
-  border-radius: 7px;
-
-  transition: 0.2s;
+    height: 42px;
+    padding: 0 12px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+    color: #66647d;
+    font-size: 13px;
+    font-weight: 500;
+    border-radius: 8px;
 }
 
 .sidebar-item:hover {
-  background-color: var(--primary-soft);
-  color: var(--primary-color);
+    background-color: var(--primary-soft);
+    color: var(--primary-color);
 }
 
 .sidebar-item.active {
-  background-color: var(--primary-soft);
-  color: var(--primary-color);
+    background-color: var(--primary-soft);
+    color: var(--primary-color);
 }
 
 .menu-badge {
-  margin-left: auto;
-
-  min-width: 18px;
-  height: 18px;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  background-color: var(--primary-soft);
-  color: var(--primary-color);
-
-  border-radius: 50%;
-
-  font-size: 10px;
+    margin-left: auto;
+    min-width: 18px;
+    height: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--primary-color);
+    color: white;
+    border-radius: 50%;
+    font-size: 10px;
 }
 
-/* Connect Section */
-
-.connect-section {
-  padding: 15px 20px;
+.sidebar-bottom {
+    margin-top: auto;
 }
 
-.connect-header {
-  margin-bottom: 30px;
+
+/*Main Section*/
+
+.connections-section {
+    padding: 15px 20px;
 }
 
-.connect-header h1 {
-  font-size: 32px;
-  margin-bottom: 8px;
+.page-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 22px;
 }
 
-.connect-header p {
-  color: #777;
-  margin: 0;
+.page-header h1 {
+    margin: 0 0 6px;
+    font-size: 30px;
+    color: var(--text-dark);
 }
 
-/* Match Card */
-
-.match-card {
-  height: 100%;
-
-  background-color: var(--white);
-
-  border: 1px solid #eeeafa;
-  border-radius: 16px;
-
-  padding: 20px;
-
-  box-shadow: 0 4px 15px rgba(91, 60, 196, 0.06);
-
-  transition: 0.2s;
+.page-header p {
+    margin: 0;
+    color: var(--text-light);
+    font-size: 14px;
 }
 
-.match-card:hover {
-  transform: translateY(-4px);
+
+/* Find Skills Button */
+
+.find-skills-btn {
+    background-color: var(--primary-color);
+    color: white;
+    text-decoration: none;
+    padding: 10px 16px;
+    border-radius: 8px;
+    font-size: 13px;
 }
 
-/* Person */
+.find-skills-btn:hover {
+    background-color: var(--primary-dark);
+    color: white;
+}
 
-.profile-top {
-  display: flex;
-  align-items: center;
-  gap: 12px;
+
+/*Search*/
+
+.search-box {
+    height: 45px;
+    background-color: var(--white);
+    border: 1px solid var(--border);
+    border-radius: 9px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 0 14px;
+    margin-bottom: 20px;
+}
+
+.search-box i {
+    color: #9692aa;
+}
+
+.search-box input {
+    width: 100%;
+    border: none;
+    outline: none;
+    font-size: 13px;
+    color: var(--text-dark);
+}
+
+.search-box input::placeholder {
+    color: #aaa7b8;
+}
+
+
+/*Connection Cards*/
+
+.connection-card {
+    background-color: var(--white);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    padding: 18px;
+    margin-bottom: 15px;
+}
+
+.person-info {
+    display: flex;
+    align-items: center;
+    gap: 12px;
 }
 
 .person-avatar {
-  width: 55px;
-  height: 55px;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  background-color: var(--primary-soft);
-  color: var(--primary-color);
-
-  border-radius: 50%;
-
-  font-weight: bold;
+    width: 55px;
+    height: 55px;
+    background-color: var(--primary-soft);
+    color: var(--primary-color);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 15px;
 }
 
-.profile-top h3 {
-  font-size: 18px;
-  margin: 0;
+.person-info h3 {
+    margin: 0;
+    font-size: 17px;
 }
 
-.profile-top p {
-  font-size: 13px;
-  color: #888;
-
-  margin: 4px 0 0;
+.person-info p {
+    margin: 4px 0 6px;
+    color: var(--text-light);
+    font-size: 12px;
 }
 
-/* Rating */
-
-.rating {
-  color: #eab308;
-  font-size: 13px;
-
-  margin: 15px 0;
+.connected-status {
+    color: #36a269;
+    font-size: 11px;
 }
 
-/* Skills */
-
-.match-card h6 {
-  font-size: 13px;
-  font-weight: 600;
-
-  margin-bottom: 8px;
+.connected-status i {
+    margin-right: 3px;
 }
 
-.skill-list {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 7px;
 
-  margin-bottom: 16px;
+/*Skill Exchange */
+
+.exchange-info {
+    margin: 18px 0;
+    padding: 13px;
+    background-color: #faf9ff;
+    border-radius: 9px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
 }
 
-.skill {
-  background-color: var(--primary-soft);
-  color: var(--primary-color);
-
-  border-radius: 20px;
-
-  padding: 6px 10px;
-
-  font-size: 12px;
+.exchange-info div {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
 }
 
-/* Button */
-
-.connect-btn {
-  width: 100%;
-
-  background-color: var(--primary-color);
-  color: white;
-
-  border: none;
-  border-radius: 8px;
-
-  padding: 10px;
-
-  font-size: 13px;
-
-  transition: 0.2s;
+.exchange-info span {
+    color: var(--text-light);
+    font-size: 11px;
 }
 
-.connect-btn:hover {
-  background-color: var(--primary-dark);
+.exchange-info strong {
+    color: var(--text-dark);
+    font-size: 13px;
+}
+
+.exchange-info i {
+    color: var(--primary-color);
+    font-size: 16px;
+}
+
+
+/*Card Buttons*/
+
+.card-actions {
+    display: flex;
+    gap: 10px;
+}
+
+.profile-btn,
+.message-btn {
+    flex: 1;
+    padding: 9px;
+    border-radius: 7px;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.profile-btn {
+    background-color: white;
+    color: var(--primary-color);
+    border: 1px solid #d9d2f5;
+}
+
+.profile-btn:hover {
+    background-color: var(--primary-soft);
+}
+
+.message-btn {
+    background-color: var(--primary-color);
+    color: white;
+    border: 1px solid var(--primary-color);
+}
+
+.message-btn:hover {
+    background-color: var(--primary-dark);
+}
+
+
+/*Right Growth Card */
+
+.growth-card {
+    background-color: var(--primary-soft);
+    border-radius: 15px;
+    padding: 25px 20px;
+    text-align: center;
+    min-height: 300px;
+}
+
+.growth-icon {
+    width: 60px;
+    height: 60px;
+    margin: 0 auto 15px;
+    background-color: white;
+    color: var(--primary-color);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+}
+
+.growth-card h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.growth-card p {
+    color: var(--text-light);
+    font-size: 13px;
+    line-height: 1.6;
+}
+
+.growth-stats {
+    display: flex;
+    justify-content: center;
+    gap: 35px;
+    margin: 20px 0;
+}
+
+.growth-stats div {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.growth-stats strong {
+    color: var(--primary-color);
+    font-size: 20px;
+}
+
+.growth-stats span {
+    color: var(--text-light);
+    font-size: 10px;
+}
+
+.growth-btn {
+    display: inline-block;
+    background-color: var(--primary-color);
+    color: white;
+    text-decoration: none;
+    padding: 10px 18px;
+    border-radius: 8px;
+    font-size: 12px;
+}
+
+.growth-btn:hover {
+    background-color: var(--primary-dark);
+    color: white;
+}
+
+
+/*Responsive*/
+
+@media (max-width: 991px) {
+
+    .sidebar {
+        min-height: auto;
+        margin-bottom: 15px;
+    }
+
+    .sidebar-bottom {
+        margin-top: 10px;
+    }
+
+    .connections-section {
+        padding: 10px;
+    }
+
+}
+
+@media (max-width: 576px) {
+
+    .page-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+    }
+
+    .page-header h1 {
+        font-size: 25px;
+    }
+
+    .find-skills-btn {
+        width: 100%;
+        text-align: center;
+    }
+
+    .exchange-info {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .exchange-info i {
+        transform: rotate(90deg);
+    }
+
+    .card-actions {
+        flex-direction: column;
+    }
+
 }
