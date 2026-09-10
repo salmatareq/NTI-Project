@@ -71,3 +71,38 @@
     margin-bottom: 12px;
   }
 }
+
+@media (max-width: 992px) {
+
+   .activity-card,
+   .swaps-card {
+     margin-top: 20px;
+   }
+
+ }
+
+
+ @media (max-width: 576px) {
+
+   .activity-item {
+     gap: 8px;
+   }
+
+   .activity-item small {
+     display: none;
+   }
+
+   .activity-content p {
+     font-size: 10px;
+   }
+
+   .activity-content span {
+     font-size: 8px;
+   }
+
+   .swap-person img {
+     width: 38px;
+     height: 38px;
+   }
+
+ }
