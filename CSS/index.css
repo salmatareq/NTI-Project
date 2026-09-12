@@ -1,60 +1,14 @@
-:root {
-  --primary-color: #5b3cc4;
-  --primary-dark: #432b9d;
-  --primary-light: #f4f1ff;
-  --primary-soft: #e9e5ff;
 
-  /* Text */
-  --text-dark: #171536;
-  --text-primary: #11112f;
-  --text-secondary: #34344f;
-  --text-muted: #555;
-
-  /* Backgrounds */
-  --bg-light: #f8f7ff;
-  --bg-section: #f6f5f7;
-  --bg-white: #ffffff;
-  --bg-footer: #29013e;
-  /* Borders */
-  --border-light: #ececec;
-  --border-primary: #b8acd9;
-
-  /* Buttons */
-  --button-primary: #573fd0;
-  --button-primary-hover: #4630b7;
-  --button-secondary-text: #4f3ac7;
-  --button-secondary-border: #6956d9;
-
-  /* Accent Colors */
-  --accent-purple: #8a76df;
-  --accent-blue: #4d91e8;
-  --accent-light-blue: #61b5ee;
-
-  /* Icons */
-  --icon-purple-bg: #e6e0f8;
-  --icon-purple: #6c5ce7;
-
-  --icon-blue-bg: #e0f8f8;
-  --icon-blue: #3b82f6;
-
-  --icon-green-bg: #e0f8e0;
-  --icon-green: #22c55e;
-
-  --icon-yellow-bg: #f8f8e0;
-  --icon-yellow: #eab308;
-
-  /* Decorative */
-  --decoration-light: #eeebff;
-  --decoration-soft: #f0edff;
-
-  /* White */
-  --white: #ffffff;
+body{
+  background-color: var(--white);
 }
+
 .navbar {
   padding: 12px 0;
   position: fixed;
   width: 100%;
   z-index: 10;
+  background-color: var(--white);
 }
 
 /* Logo */
@@ -92,17 +46,37 @@
   color: var(--primary-color) !important;
 }
 
+.theme-toggle-btn {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    border: 1px solid var(--border-light);
+    background-color: var(--bg-white);
+    color: var(--text-dark);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 16px;
+    margin-right: 10px
+}
+
+.theme-toggle-btn:hover {
+    background-color: var(--primary-soft);
+}
 /* Login */
 .btn-login {
   border: 1px solid var(--border-primary);
   color: var(--button-secondary-text);
+  background-color: var(--white);
   padding: 8px 18px;
   border-radius: 8px;
   font-size: 14px;
 }
 
 .btn-login:hover {
-  background-color: var(--primary-light);
+  background-color: var(--border-primary);
+  color: var(--text-dark);
 }
 
 /* Sign up */
@@ -120,7 +94,6 @@
 }
 body {
   font-family: "Poppins", sans-serif;
-  color: var(--text-primary);
 }
 main {
   padding-top: 70px;
@@ -201,19 +174,20 @@ main {
 }
 
 .second-btn {
-  background: var(--white);
+  border: 1px solid var(--border-primary);
   color: var(--button-secondary-text);
+  background-color: var(--white);
 
   padding: 12px 25px;
 
-  border: 1px solid var(--button-secondary-border);
   border-radius: 7px;
 
   font-size: 14px;
 }
 
 .second-btn:hover {
-  background-color: var(--bg-section);
+  background-color: var(--border-primary);
+  color: var(--text-dark);
 }
 
 .statistics {
@@ -229,7 +203,7 @@ main {
 
 .stat i {
   font-size: 25px;
-  color: #5943d1;
+  color: var(--button-primary);
 }
 
 .stat strong {
@@ -287,7 +261,7 @@ main {
 
   border-radius: 25px;
 
-  background: #ffffff;
+  background: var(--white);
 
   display: flex;
   justify-content: center;
@@ -321,7 +295,7 @@ main {
 .speech {
   position: absolute;
 
-  background: white;
+  background: var(--white);
 
   padding: 13px 18px;
 
@@ -350,6 +324,11 @@ main {
 .speech-right {
   right: 55px;
   top: 25px;
+}
+
+.speech p {
+  color: var(--text-muted);
+  margin:0;
 }
 
 .swap-icon {
@@ -410,7 +389,7 @@ main {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 50px 0;
+  padding: 50px 0;
 }
 
 .First-part h2,
@@ -418,10 +397,19 @@ main {
   font-size: 2rem;
   margin-bottom: 20px;
   font-family: "Fira Sans", sans-serif;
+  color: var(--text-dark)
+}
+
+.First-part p{
+  color: var(--text-muted)
+}
+
+.First-part{
+  background-color: var(--white);
 }
 
 .Second-part {
-  background-color: rgb(246, 245, 247);
+  background-color: var(--bg-light);
   padding: 50px 0;
 }
 
@@ -441,7 +429,7 @@ main {
   border: 1px solid var(--border-light);
   border-radius: 5px;
   padding: 10px;
-  background-color: #fff;
+  background-color: var(--white);
 }
 
 .box h3 {
@@ -468,23 +456,23 @@ main {
 }
 
 .icon.purple {
-  background-color: rgb(230, 224, 248);
-  color: rgb(108, 92, 231);
+  background-color: var(--icon-purple-bg);
+  color: var(--icon-purple);
 }
 
 .icon.blue {
-  background-color: rgb(224, 248, 248);
-  color: rgb(59, 130, 246);
+  background-color: var(--icon-blue-bg);
+  color: var(--icon-blue);
 }
 
 .icon.green {
-  background-color: rgb(224, 248, 224);
-  color: rgb(34, 197, 94);
+  background-color: var(--icon-green-bg);
+  color: var(--icon-green);
 }
 
 .icon.yellow {
-  background-color: rgb(248, 248, 224);
-  color: rgb(234, 179, 8);
+  background-color: var(--icon-yellow-bg);
+  color: var(--icon-yellow);
 }
 .footer {
   background: var(--bg-footer);
