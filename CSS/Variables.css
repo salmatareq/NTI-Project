@@ -1,0 +1,98 @@
+:root {
+    --primary-color: #5b3cc4;
+    --primary-dark: #432b9d;
+    --primary-light: #f4f1ff;
+    --primary-soft: #e9e5ff;
+
+    /* Text */
+    --text-dark: #171536;
+    --text-primary: #11112f;
+    --text-secondary: #34344f;
+    --text-muted: #555555;
+
+    /* Backgrounds */
+    --bg-light: #f8f7ff;
+    --bg-section: #f6f5f7;
+    --bg-white: #ffffff;
+    --bg-footer: #29013e;
+
+    /* Borders */
+    --border-light: #ececec;
+    --border-primary: #b8acd9;
+
+    /* Buttons */
+    --button-primary: #573fd0;
+    --button-primary-hover: #4630b7;
+    --button-secondary-text: #4f3ac7;
+    --button-secondary-border: #6956d9;
+
+    /* Accent Colors */
+    --accent-purple: #8a76df;
+    --accent-blue: #4d91e8;
+    --accent-light-blue: #61b5ee;
+
+    /* Icons */
+    --icon-purple-bg: #e6e0f8;
+    --icon-purple: #5d51b8;
+    --icon-blue-bg: #e0f8f8;
+    --icon-blue: #3b82f6;
+    --icon-green-bg: #e0f8e0;
+    --icon-green: #22c55e;
+    --icon-yellow-bg: #f8f8e0;
+    --icon-yellow: #eab308;
+
+    /* hover */
+    --yellow-hover:  #fffef7;
+
+    /* White */
+    --white: #ffffff;
+}
+
+[data-theme="dark"] {
+    --primary-color: #8b6ef6;
+    --primary-dark: #6f52d9;
+    --primary-light: #2a2240;
+    --primary-soft: #332a4d;
+
+    /* Text */
+    --text-dark: #f0eefc;
+    --text-primary: #f5f3ff;
+    --text-secondary: #c9c5e0;
+    --text-muted: #9994b3;
+
+    /* Backgrounds */
+    --bg-light: #14121f;
+    --bg-section: #1a1729;
+    --bg-white: #1e1b2e;
+    --bg-footer: #0d0114;
+
+    /* Borders */
+    --border-light: #2e2a44;
+    --border-primary: #4a3f6e;
+
+    /* Buttons */
+    --button-primary: #8b6ef6;
+    --button-primary-hover: #a288ff;
+    --button-secondary-text: #c9baff;
+    --button-secondary-border: #6956d9;
+
+    /* Accent Colors */
+    --accent-purple: #a794f0;
+    --accent-blue: #6ba3f0;
+    --accent-light-blue: #7ec4f2;
+
+    /* Icons */
+    --icon-purple-bg: #362d54;
+    --icon-purple: #a794f0;
+    --icon-blue-bg: #1f2a47;
+    --icon-blue: #6ba3f0;
+    --icon-green-bg: #1e3a24;
+    --icon-green: #4ade80;
+    --icon-yellow-bg: #4e410e;
+    --icon-yellow: #fbbf24;
+
+    /* hover */
+    --yellow-hover:  #5f550b;
+    /* White (used as pure white in light mode — in dark mode, treat as your "on-dark" white-equivalent) */
+    --white: #232036;
+}

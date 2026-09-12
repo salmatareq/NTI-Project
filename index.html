@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" >
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -29,6 +29,7 @@
       rel="stylesheet"
     />
 
+    <link rel="stylesheet" href="./CSS/Variables.css" />
     <link rel="stylesheet" href="./CSS/index.css" />
     <link rel="stylesheet" href="./CSS/responsive.css" />
    
@@ -44,7 +45,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg bg-white shadow-sm">
+    <nav class="navbar navbar-expand-lg shadow-sm">
       <div class="container">
         <!-- Logo -->
         <a class="navbar-brand d-flex align-items-center gap-2" href="#">
@@ -88,7 +89,9 @@
             </li>
           </ul>
 
-         
+          <button id="theme-toggle" class="theme-toggle-btn">
+              <i class="bi bi-moon-stars"></i>
+          </button>
           <div class="d-flex gap-2">
             <a href="./pages/login.html" class="btn btn-login">Log in</a>
             <a href="./pages/signup.html" class="btn btn-signup">Sign up</a>
@@ -159,7 +162,7 @@
                 <div class="circle circle-two"></div>
 
                 <div class="speech speech-left">
-                  I can teach
+                  <p>I can teach</p>
                   <strong>English</strong>
                 </div>
 
@@ -168,7 +171,7 @@
                 </div>
 
                 <div class="speech speech-right">
-                  I can teach
+                  <p>I can teach</p>
                   <strong>Java</strong>
                 </div>
 
@@ -320,6 +323,7 @@
       </div>
     </footer>
 
+    <script src="./JS/theme.js" defer></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>
