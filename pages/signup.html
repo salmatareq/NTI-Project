@@ -1,38 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="../CSS/Variables.css" />
-        <link rel="stylesheet" href="../CSS/login.css" />
-        <title>Document</title>
-    </head>
-    <body>
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="../CSS/login.css" />
+
+    <title>Sign Up - Swaply</title>
+
+</head>
+
+<body>
 
     <div class="login-box">
+
         <h2>Sign Up</h2>
+
         <p>Create an account to continue to Swaply</p>
 
-        <form>
+        <form id="signupForm">
+
             <div class="name-row">
+
                 <div class="field">
+
                     <label>First Name</label>
-                    <input class="Name" type="text" placeholder="First Name" />
+
+                    <input id="firstName" class="Name" type="text" placeholder="First Name" />
+
                 </div>
+
                 <div class="field">
+
                     <label>Last Name</label>
-                    <input class="Name" type="text" placeholder="Last Name" />
+
+                    <input id="lastName" class="Name" type="text" placeholder="Last Name" />
+
                 </div>
+
             </div>
 
             <label>Email</label>
-            <input type="email" placeholder="Email" />
+
+            <input id="signupEmail" type="email" placeholder="Email" />
 
             <label>Password</label>
-            <input type="password" placeholder="Password" />
+
+            <input id="signupPassword" type="password" placeholder="Password" />
+
             <label>Confirm Password</label>
 
-            <input type="password" placeholder="Confirm Password" />
+            <input id="confirmPassword" type="password" placeholder="Confirm Password" />
+
             <button type="submit">Sign Up</button>
 
             <p class="signup-text">
@@ -41,6 +63,11 @@
             </p>
             
         </form>
+
     </div>
-    </body>
+
+    <script src="../js/signUp.js"></script>
+
+</body>
+
 </html>
