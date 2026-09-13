@@ -32,7 +32,7 @@ signupForm.addEventListener("submit", function(event) {
     // Get users array from localStorage
     let users = JSON.parse(localStorage.getItem("users")) || [];
 
-    // Check if email already exists
+   
     let emailExists = users.find(function(user) {
         return user.email === email;
     });
